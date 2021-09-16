@@ -39,6 +39,7 @@ public class JFramePrincipal  extends JFrame implements WindowListener {
         
                         cardLayout = new CardLayout();//iniciando o gerenciador de layout para esta JFrame
                         painel = new JPanel();//inicializacao
+                        
                         painel.setLayout(cardLayout);//definindo o cardLayout para o paineldeFundo
 
                         this.add(painel);  //adiciona no JFrame o paineldeFundo
@@ -59,7 +60,11 @@ public class JFramePrincipal  extends JFrame implements WindowListener {
             }
 
             @Override
-            public void windowClosing(WindowEvent we) {        
+            public void windowClosing(WindowEvent we) { 
+                
+                       System.out.println("Fechando o jframe ..");
+                        controle.fecharBD();
+                
             }
 
             @Override

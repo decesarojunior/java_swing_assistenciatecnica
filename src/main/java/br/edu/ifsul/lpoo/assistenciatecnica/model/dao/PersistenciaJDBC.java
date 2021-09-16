@@ -343,7 +343,7 @@ public class PersistenciaJDBC implements InterfacePersistencia {
             
             PreparedStatement ps = this.con.prepareStatement("delete from tb_pais where id = ? ");
             ps.setInt(1, p.getId());
-            ps.execute();
+            ps.execute();            
             
         }else if( o instanceof Estado){
                

@@ -16,15 +16,22 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author telmo
+ * 
+ *          MVC: Model - Controle - View  
  */
 public class Controle {
     
             private PersistenciaJDBC conexaoJDBC;
-            private JFramePrincipal frame;
-            private JPanelAutenticacao pnlAutenticacao;
-            private JMenuBarHome menuBar;
-            private JPanelHome pnlHome;
-            private JPanelUsuario pnlUsuario;
+            
+            private JFramePrincipal frame; // frame principal da minha aplicação gráfica
+            
+            private JPanelAutenticacao pnlAutenticacao; //painel para a autenticacao do Jogador.
+            
+            private JMenuBarHome menuBar; //menu principal
+            
+            private JPanelHome pnlHome; // paine de boas vindas (home)
+                        
+            private JPanelUsuario pnlUsuario;  // tela de CRUD para Usuario.
     
             public Controle(){
                         
@@ -51,7 +58,8 @@ public class Controle {
             
             public void initComponents(){
                 
-                        frame = new JFramePrincipal(this);                        
+                        frame = new JFramePrincipal(this);      
+                        
                         pnlAutenticacao = new JPanelAutenticacao(this);
                         menuBar = new JMenuBarHome(this);
                         pnlHome = new JPanelHome(this);
@@ -60,6 +68,8 @@ public class Controle {
                         frame.addTela(pnlAutenticacao, "tela_autenticacao");//carta 1
                         frame.addTela(pnlHome, "tela_home");//carta 2
                         frame.addTela(pnlUsuario, "tela_usuario");//carta 3
+                        
+                        frame.showTela("tela_autenticacao"); // apreseta a carta cujo nome é "tela_autenticacao"
                         
                         frame.setVisible(true); // torna visível o jframe
             }
