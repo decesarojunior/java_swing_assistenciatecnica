@@ -21,7 +21,8 @@ public class TestePersistenciaJDBC {
         
         if(conexaoJDBC.conexaoAberta()){
             
-            Pais p = (Pais) conexaoJDBC.find(Pais.class, 1);
+            Pais p = (Pais) conexaoJDBC.find(Pais.class, 1);                                    
+            
             if(p == null){
                 System.out.println("Não encontrou o pais id=1");
             }else{

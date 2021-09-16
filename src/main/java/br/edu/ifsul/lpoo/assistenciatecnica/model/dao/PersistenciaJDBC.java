@@ -450,7 +450,13 @@ public class PersistenciaJDBC implements InterfacePersistencia {
         //insert into tb_pais (id, nome) values (nextval('seq_pais_id'), 'Brasil');
         //insert into tb_estado(id, nome, uf, pais_id) values (nextval('seq_estado_id'), 'Rio Grande do Sul', 'RS', 2);
         //insert into tb_cidade(id, nome, estado_id) values (nextval('seq_estado_id'), 'Passo Fundo', 1), (nextval('seq_estado_id'), 'Gentil', 1), (nextval('seq_estado_id'), 'Marau', 1);
-        
+        //comandos psql
+        //sudo postgres
+        //psql
+        //\connect db_projetoassistenciatecnica2021_01
+        //\d lista os objetos
+        // select, insert, update, etc..
+        //\q (sair)
         
         
         Usuario usuario = null;
