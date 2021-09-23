@@ -65,7 +65,7 @@ public class JPanelListagem extends javax.swing.JPanel {
 
         pnlNorte = new javax.swing.JPanel();
         lblPesquisarNome = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtPesquisarNome = new javax.swing.JTextField();
         btnPesquisar = new javax.swing.JButton();
         pnlSul = new javax.swing.JPanel();
         btnNovo = new javax.swing.JButton();
@@ -80,8 +80,8 @@ public class JPanelListagem extends javax.swing.JPanel {
         lblPesquisarNome.setText("Pesquisar por Nome");
         pnlNorte.add(lblPesquisarNome);
 
-        jTextField1.setColumns(10);
-        pnlNorte.add(jTextField1);
+        txtPesquisarNome.setColumns(5);
+        pnlNorte.add(txtPesquisarNome);
 
         btnPesquisar.setText("Pesquisar");
         pnlNorte.add(btnPesquisar);
@@ -200,12 +200,12 @@ public class JPanelListagem extends javax.swing.JPanel {
     private javax.swing.JButton btnNovo;
     private javax.swing.JButton btnPesquisar;
     private javax.swing.JButton btnRemover;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblPesquisarNome;
     private javax.swing.JPanel pnlCentro;
     private javax.swing.JPanel pnlNorte;
     private javax.swing.JPanel pnlSul;
     private javax.swing.JScrollPane scpBarraRolagem;
     private javax.swing.JTable tblListagem;
+    private javax.swing.JTextField txtPesquisarNome;
     // End of variables declaration//GEN-END:variables
 }

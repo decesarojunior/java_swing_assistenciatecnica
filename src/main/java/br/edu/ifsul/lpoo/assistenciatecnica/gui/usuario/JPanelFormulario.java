@@ -190,7 +190,7 @@ public class JPanelFormulario extends javax.swing.JPanel {
         pnlDados.add(pnlSul, java.awt.BorderLayout.SOUTH);
 
         JTpUsuario.addTab("Dados Cadastrais", pnlDados);
-        JTpUsuario.addTab("Permissões", pnlPermissoes);
+        JTpUsuario.addTab("Perfil", pnlPermissoes);
 
         add(JTpUsuario, java.awt.BorderLayout.CENTER);
         JTpUsuario.getAccessibleContext().setAccessibleName("Formulário");
